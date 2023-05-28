@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  quickquotes-helm:
+  - apiVersion: v2
+    created: "2023-05-28T09:42:33.797602+07:00"
+    description: BGN Service
+    digest: 7b3ee159eb38ccaf735f6f3f32b8ec916c314088ce862289ceaa19bd34c5728d
+    name: quickquotes-helm
+    type: application
+    urls:
+    - https://github.com/bluecloudy/quickquotes-helm/quickquotes-helm-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-05-28T09:42:33.796803+07:00"
