@@ -2,7 +2,16 @@ apiVersion: v1
 entries:
   base:
   - apiVersion: v2
-    created: "2023-05-28T09:58:43.973039+07:00"
+    created: "2023-05-30T11:36:00.763769+07:00"
+    description: A Helm chart for Kubernetes
+    digest: af3ec67fa36e400d20f2355bec1050582c7d72200b13dd1115c8d3f92a71096d
+    name: base
+    type: application
+    urls:
+    - https://bluecloudy.github.io/Base.Charts/base-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    created: "2023-05-30T11:36:00.761765+07:00"
     description: A Helm chart for Kubernetes
     digest: e142c20ca69aae8cc124b9658638dc5f7ca50de6e963f37dda53506c8d5e8173
     name: base
@@ -10,4 +19,4 @@ entries:
     urls:
     - https://bluecloudy.github.io/Base.Charts/base-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-28T09:58:43.972198+07:00"
+generated: "2023-05-30T11:36:00.76104+07:00"

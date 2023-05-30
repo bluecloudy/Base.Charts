@@ -45,10 +45,22 @@ spec:
             - name: http
               containerPort: {{ .Values.service.port }}
               protocol: TCP
+          {{- if .Values.monitorConfig.liveness }}
           livenessProbe:
             {{ .Values.monitorConfig.liveness | toYaml | indent 12 | trim }}
+          {{- end }}
+          {{- if .Values.monitorConfig.readiness }}
           readinessProbe:
             {{ .Values.monitorConfig.readiness | toYaml | indent 12 | trim }}
+          {{- end }}
+          {{- if .Values.persistence.enabled }}
+          volumeMounts:
+          - name: data
+            mountPath: {{ .Values.persistence.mountPath }}
+            {{- if .Values.persistence.subPath }}
+            subPath: {{ .Values.persistence.subPath }}
+            {{- end }}
+          {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
@@ -63,3 +75,9 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      {{- if .Values.persistence.enabled }}
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: {{ .Values.persistence.existingClaim | default (include "base.fullname" .) }}
+      {{- end -}}
