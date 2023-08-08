@@ -43,8 +43,7 @@ spec:
           {{- end }}
           ports:
             {{- range .Values.service.ports }}
-            - port: {{ .port }}
-              targetPort: {{ .targetPort }}
+            - containerPort: {{ .port }}
               protocol: {{ .protocol }}
               name: {{ .name }}
             {{- end }}
