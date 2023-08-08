@@ -42,7 +42,7 @@ spec:
               value: {{ quote $v }}
           {{- end }}
           ports:
-            {{- range .Values.ports }}
+            {{- range .Values.service.ports }}
             - port: {{ .port }}
               targetPort: {{ .targetPort }}
               protocol: {{ .protocol }}

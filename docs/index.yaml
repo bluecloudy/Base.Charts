@@ -2,7 +2,16 @@ apiVersion: v1
 entries:
   base:
   - apiVersion: v2
-    created: "2023-08-08T19:15:38.95659+07:00"
+    created: "2023-08-08T19:29:14.72341+07:00"
+    description: A Helm chart for Kubernetes
+    digest: 66a322bf4b9d7cebba7c004802c9c0f295b0b3c872c31457806f8050bbd21f59
+    name: base
+    type: application
+    urls:
+    - https://bluecloudy.github.io/Base.Charts/base-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    created: "2023-08-08T19:29:14.720656+07:00"
     description: A Helm chart for Kubernetes
     digest: 506792a459de6612830ab7bfb0e7c00fa8555a1fbd48c910414f951093313f40
     name: base
@@ -11,7 +20,7 @@ entries:
     - https://bluecloudy.github.io/Base.Charts/base-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
-    created: "2023-08-08T19:15:38.955642+07:00"
+    created: "2023-08-08T19:29:14.716979+07:00"
     description: A Helm chart for Kubernetes
     digest: e4d5e5bda38a51e530426bdcc1c2b6b48e937891692b0a03d023e25d6c441297
     name: base
@@ -20,7 +29,7 @@ entries:
     - https://bluecloudy.github.io/Base.Charts/base-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
-    created: "2023-08-08T19:15:38.954705+07:00"
+    created: "2023-08-08T19:29:14.715773+07:00"
     description: A Helm chart for Kubernetes
     digest: 6b5132d5261be55a1a0bfab31b2ef07e01a937dc4405c821debeb16e204e8725
     name: base
@@ -29,7 +38,7 @@ entries:
     - https://bluecloudy.github.io/Base.Charts/base-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
-    created: "2023-08-08T19:15:38.954203+07:00"
+    created: "2023-08-08T19:29:14.71516+07:00"
     description: A Helm chart for Kubernetes
     digest: af3ec67fa36e400d20f2355bec1050582c7d72200b13dd1115c8d3f92a71096d
     name: base
@@ -38,7 +47,7 @@ entries:
     - https://bluecloudy.github.io/Base.Charts/base-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2023-08-08T19:15:38.953684+07:00"
+    created: "2023-08-08T19:29:14.714604+07:00"
     description: A Helm chart for Kubernetes
     digest: e142c20ca69aae8cc124b9658638dc5f7ca50de6e963f37dda53506c8d5e8173
     name: base
@@ -46,4 +55,4 @@ entries:
     urls:
     - https://bluecloudy.github.io/Base.Charts/base-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-08T19:15:38.951+07:00"
+generated: "2023-08-08T19:29:14.713685+07:00"
