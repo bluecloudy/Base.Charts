@@ -41,16 +41,13 @@ spec:
             - name: {{ quote $k }}
               value: {{ quote $v }}
           {{- end }}
-          {{- if .Values.service.port -}}
           ports:
-            - name: http
-              containerPort: {{ .Values.service.port }}
-              protocol: TCP
-          {{- end }}
-          {{- if .Values.service.ports -}}
-          ports:
-            {{- toYaml .Values.service.ports | nindent 12 }}
-          {{- end }}
+            {{- range .Values.ports }}
+            - port: {{ .port }}
+              targetPort: {{ .targetPort }}
+              protocol: {{ .protocol }}
+              name: {{ .name }}
+            {{- end }}
           {{- if .Values.monitorConfig.liveness }}
           livenessProbe:
             {{ .Values.monitorConfig.liveness | toYaml | indent 12 | trim }}
