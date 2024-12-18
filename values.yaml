@@ -84,6 +84,6 @@ persistence:
   storageClass: ""
   annotations: {}
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   size: 8Gi
   selector: {}
